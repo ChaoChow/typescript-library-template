@@ -1,23 +1,23 @@
 {
   "name": "typescript-library-template",
   "version": "0.1.0",
-  "description": "",
-  "type": "module",
+  "description": "Sample project for setting up a typescript library project",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "test": "jest",
-    "build": "tsc"
-  },
   "keywords": [],
   "author": "Qiaochu Tang<tqiaochu@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.13",
     "@types/node": "^22.7.4",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
+    "tsc-alias": "^1.8.10",
     "typescript": "^5.6.2"
   }
 }
