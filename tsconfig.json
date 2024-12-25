@@ -1,18 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2020",
-    "strict": true,
-    "outDir": "dist",
-    "preserveConstEnums": true,
-    "module":"commonjs",
-    "moduleResolution":"node",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
     "baseUrl": ".",
+    "esModuleInterop": true,
     "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "module":"commonjs",
+    "outDir": "dist",
+    "paths": {
+      "src/*": ["./src/*"],
+      "test/*": ["./test/*"],
+    },
     "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "target": "es2016"
   },
   "exclude": ["node_modules", "test/*"]
 }
